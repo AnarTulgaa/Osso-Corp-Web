@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>FastTrack Haulers</title>
+  <title>Osso Corporation</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -11,12 +11,20 @@
   <!-- Navbar -->
   <nav id="navbar" class="nav">
     <div class="container nav__inner">
-      <div class="brand">FastTrack Haulers</div>
+      <a class="brand" href="#home" aria-label="Osso Corporation">
+  <img
+    src="/pics/OSSO logo.PNG"
+    srcset="assets/logo@2x.png 2x"
+    alt="Osso Corporation Logo"
+    width="180" height="40"
+    fetchpriority="high"
+  />
+</a>
 
       <!-- Desktop nav -->
       <div class="nav__links" role="navigation">
         <button class="nav__link" data-scroll="#home">Home</button>
-        <button class="nav__link" data-scroll="#about">About Us</button>
+        <button class="nav__link" data-scroll="#about-details">About Us</button>
         <button class="nav__link" data-scroll="#services">Services</button>
         <button class="nav__link" data-scroll="#contact">Contact</button>
       </div>
@@ -41,9 +49,15 @@
 
   <!-- Hero -->
   <section id="home" class="hero">
-    <div class="hero__bg" style="--pos-y:40%;
-      --img:url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=2070&q=80');"></div>
-    <div class="hero__overlay"></div>
+<div class="hero__slideshow" style="--per-slide:5s; --count:5;">
+  <div class="slide" style="--i:0; background-image:url('/pics/Main\ pic1.JPG')"></div>
+  <div class="slide" style="--i:1; background-image:url('/pics/Main\ pic2.jpg')"></div>
+  <div class="slide" style="--i:2; background-image:url('/pics/Main\ pic3.jpg')"></div>
+  <div class="slide" style="--i:2; background-image:url('/pics/main\ pic\ 4.jpg')"></div>
+  <div class="slide" style="--i:3; background-image:url('/pics/BMW.jpg')"></div>
+  <div class="slide" style="--i:4; background-image:url('/pics/Dront\ Pic2.jpg')"></div>
+</div>
+<div class="hero__overlay"></div>
     <div class="container hero__content">
       <h1 class="hero__title">Professional Vehicle Transport Solutions</h1>
       <p class="hero__subtitle">Safe, reliable, and efficient vehicle transportation services nationwide</p>
@@ -56,7 +70,50 @@
 
   <!-- About -->
   <section id="about" class="section">
-    <div class="container">
+    <section class="bands">
+        <section class="band">
+      <div class="band__text">
+        <h2 class="band__title">WE ARE OSSO CORPORATION</h2>
+        <p class="band__lead">
+          Osso Corporation is built to serve the nation’s automotive supply chain at scale.
+          We provide dependable transport for leading automakers across production, distribution,
+          and retail markets.
+        </p>
+        <p class="band__lead">
+          Our strength lies in integration—deep industry experience, broad geographic reach,
+          and long-standing partnerships to move vehicles with consistency, safety, and efficiency.
+        </p>
+      </div>
+      <figure class="band__media">
+        <img src="/pics/Yellow.jpg" alt="Car hauler on highway">
+      </figure>
+    </section>
+    <section class="band band--reverse">
+      <div class="band__text">
+        <h2 class="band__title">YOUR NEXT STOP? A CAREER WITH NO LIMITS.</h2>
+        <p class="band__lead">
+          We’re expanding nationwide with roles in driving, logistics, terminals, and corporate.
+        </p>
+      </div>
+      <figure class="band__media">
+        <img src="/pics/Nasa pic.jpg" alt="Fleet at terminal">
+      </figure>
+    </section>
+    <section class="band">
+      <div class="band__text">
+        <h2 class="band__title">DELIVERING THE WORLD’S FINEST CARS</h2>
+        <p class="band__lead">
+          Enclosed/open transport, real-time tracking, and dedicated account management.
+        </p>
+      </div>
+      <figure class="band__media">
+        <img src="/pics/Amazon.jpg" alt="Enclosed trailer service">
+      </figure>
+    </section>
+  </section>
+    </section>
+
+    <div class="container" id="about-details">
       <div class="section__head">
         <h2 class="section__title">About Our Company</h2>
         <div class="section__bar"></div>
@@ -66,15 +123,15 @@
         <div class="about__media">
           <div class="about__img-wrap">
             <img class="about__img" alt="Car hauler truck"
-              src="https://images.unsplash.com/photo-1626059689453-35089f53be5f?auto=format&fit=crop&w=1974&q=80" />
-            <div class="about__tag">10+ Years of Excellence</div>
+              src="/pics/Front Pic 3.jpg"/>
+            <div class="about__tag">15+ Years of Excellence</div>
           </div>
         </div>
 
         <div class="about__text">
           <h3 class="about__title">Your Trusted Partner in Vehicle Transportation</h3>
           <p class="lead">
-            FastTrack Haulers is a premier vehicle transportation company with over a decade of experience in the industry.
+            Osso Corporation is a premier vehicle transportation company with over a decade of experience in the industry.
             We specialize in safe, reliable, and efficient car hauling services across the United States.
           </p>
           <p class="lead">
@@ -318,7 +375,7 @@
                 </svg>
                 <div>
                   <p class="strong">Phone</p>
-                  <p class="muted light">(800) 123-4567</p>
+                  <p class="muted light">(213)465-4839</p>
                 </div>
               </div>
 
@@ -333,7 +390,7 @@
                   <p class="muted light">info@fasttrackhulers.com</p>
                 </div>
               </div>
-
+`
               <div class="stack__row">
                 <!-- MapPin -->
                 <svg class="icon" viewBox="0 0 24 24" fill="none"
@@ -387,7 +444,7 @@
     <div class="container">
       <div class="footer__grid">
         <div>
-          <h3 class="h4 text-white">FastTrack Haulers</h3>
+          <h3 class="h4 text-white">Osso Corporation</h3>
           <p class="muted">Professional vehicle transportation services nationwide. Safe, reliable, and efficient.</p>
           <div class="socials">
             <a class="social" href="#" aria-label="Facebook">
@@ -429,14 +486,14 @@
           <h3 class="h4 text-white">Contact</h3>
           <ul class="links">
             <li class="muted">123 Transport Avenue<br/>Chicago, IL 60601</li>
-            <li class="muted">Phone: (800) 123-4567</li>
-            <li class="muted">Email: info@fasttrackhulers.com</li>
+            <li class="muted">Phone: (213)465-4839</li>
+            <li class="muted">Email: info@.com</li>
           </ul>
         </div>
       </div>
 
       <div class="footer__bottom">
-        <p class="muted">&copy; <span id="year"></span> FastTrack Haulers. All rights reserved.</p>
+        <p class="muted">&copy; <span id="year"></span> Osso Corporation. All rights reserved.</p>
       </div>
     </div>
   </footer>
